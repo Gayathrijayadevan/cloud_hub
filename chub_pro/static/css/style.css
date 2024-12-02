@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #88c6f9, #345d9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+
+  .login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .login-card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .form-control {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  .btn-primary {
+    background-color: #4f86e8;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #345d9d;
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
