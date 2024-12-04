@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  .hero-section {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 50px 0;
+  }
+  .hero-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  .section-title {
+    border-bottom: 3px solid black;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .accordion-button {
+    background-color: #f8f9fa;
+    color: #007bff;
+  }
+  .accordion-button:hover {
+    background-color: #e9ecef;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  .link-hover:hover {
+    text-decoration: underline;
+  }
+  .bg-light-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+  }
+  .card {
+    border: none;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: scale(1.02);
+  }

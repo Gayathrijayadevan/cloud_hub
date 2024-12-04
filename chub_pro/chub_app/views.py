@@ -40,3 +40,6 @@ def register(req):
     
 def home(req):
     return render(req,'home.html')
+
+def support(req):
+    return render(req,'support.html')

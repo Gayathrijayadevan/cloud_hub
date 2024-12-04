@@ -5,4 +5,7 @@ urlpatterns=[
     path('',views.chub_login),
     path('register',views.register),
     path('home',views.home),
+    path('support',views.support),
+    path('logout',views.logout),
+
 ]
