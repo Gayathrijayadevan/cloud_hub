@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
   }
   .hero-section {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background: linear-gradient( to left, rgba(18,153,243,255), #84eef4);
     color: white;
     padding: 50px 0;
   }
@@ -44,9 +44,7 @@ body {
     transform: scale(1.02);
   }
   /*-------------- upload page -------------------*/
-  body {
-    background-color: #74b6f8;
-}
+  
 .form-container {
     background:#bad4ee;
     border-radius: 10px;

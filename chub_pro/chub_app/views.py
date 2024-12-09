@@ -65,7 +65,7 @@ def upload(req):
 
         media_upload = MediaUpload(title=title, description=description,media_file=media_file,media_type=media_type,upload_date=upload_date)
         media_upload.save()
-        return HttpResponse("Media uploaded successfully!")
+        return redirect(home)
 
     return render(req,'upload.html')
 
