@@ -43,3 +43,35 @@ body {
   .card:hover {
     transform: scale(1.02);
   }
+  /*-------------- upload page -------------------*/
+  body {
+    background-color: #74b6f8;
+}
+.form-container {
+    background:#bad4ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px  #3891ea;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0a5095;
+}
+.form-label {
+    font-weight: 600;
+    color: #0a5095;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.form-text {
+    color:#0a5095;
+}

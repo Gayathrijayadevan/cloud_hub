@@ -7,5 +7,7 @@ urlpatterns=[
     path('home',views.home),
     path('support',views.support),
     path('logout',views.logout),
+    path('upload',views.upload),
+    path('gallery',views.display_media),
 
 ]

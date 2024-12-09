@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Upload Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/sup_style.css' %}">
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title text-center mb-4">Upload Media</h2>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    {% csrf_token %} 
+                    <!-- Title -->
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
+                    </div>
+                    <!-- Description -->
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="3" placeholder="Enter description" required></textarea>
+                    </div>
+                    <!-- Media Upload -->
+                    <div class="mb-3">
+                        <label for="media" class="form-label">Upload Media</label>
+                        <input class="form-control" type="file" id="media" name="media" accept="image/*,video/*,audio/*,text/*" required>
+                        <div class="form-text">Accepted formats: Images, Videos, Audio, or Text files.</div>
+                    </div>
+                    <!-- Date of Upload -->
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date of Upload</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
